@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #888;
+    font-family: monospace;
+}
+.calculator {
+    margin: 3em auto;
+    border-radius: 1em;
+    overflow: hidden;
+    border: 3px solid black;
+}
+.calculator h1 {
+    text-align: center;
+    padding: 0.5em;
+    background-color: #D2CBB8;
+}
+.calculator .screen {
+    background-color: #EBE4D1;
+    padding: 2em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 250px;
+}
+.calculator .screen .results {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.calculator .screen .results .back {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    padding: 1em 0;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+.calculator .screen .results .back:hover,
+.calculator .screen .results .back:focus {
+    transform: scale(1.1);
+}
+.calculator .screen .results .back:active {
+    transform: scale(0.5);
+}
+.calculator .screen .current {
+    text-align: right;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 4rem;
+    width: 320px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.calculator .screen .previous {
+    font-size: 2rem;
+    opacity: 0.5;
+}
+.calculator .keypad {
+    background-color: #D2CBB8;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
+    max-width: 100%;
+    justify-content: center;
+    gap: 1em;
+}
+.calculator .keypad button {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.calculator .keypad button:hover,
+.calculator .keypad button:focus {
+    opacity: 0.75;
+    transform: scale(1.05);
+}
+.calculator .keypad button:active {
+    opacity: 0.5;
+    transform: scale(0.75);
+}
+.calculator .keypad .equals {
+    grid-row: span 2;
+    background-color: #26577C;
+    color: #E2E2E2;
+}
+.calculator .keypad .clear {
+    background-color: #E55604;
+    color: #E2E2E2;
+}
+@media (min-width: 450px) {
+    .calculator {
+        width: fit-content;
+    }
+    .calculator .keypad {
+        grid-template-columns: repeat(4, 75px);
+        grid-template-rows: repeat(5, 75px);
+    }
+}

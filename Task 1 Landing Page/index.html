@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Big+Shoulders+Display:wght@700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <title>إبتكار</title>
+</head>
+<body dir="rtl">
+    <header class="position-relative">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="logo d-flex align-items-center gap-3">
+                <img src="./assets/Logo.svg" alt="logo">
+                <p class="d-none d-md-block fs-2 my-0">إبتكار</p>
+            </div>
+            <nav>
+                <ul id="nav" class="d-none d-md-flex m-0 gap-3">
+                    <li><a href="#about">عنا</a></li>
+                    <li><a href="#features">مميزاتنا</a></li>
+                    <li><a href="#testimonials">التوصيات</a></li>
+                    <li><a href="#contact">تواصل</a></li>
+                </ul>
+                <button id="navBtn" class="d-md-none btn btn-outline-light d-flex justify-content-center align-items-center"><i class="fa-solid fa-bars fs-1"></i></button>
+            </nav>
+        </div>
+        <script>
+            navBtn.onclick = function() {
+                nav.classList.toggle("d-none");
+            }
+        </script>
+    </header>
+    <section class="hero py-5">
+        <div class="my-5 container d-md-flex justify-content-between align-items-center">
+            <div class="my-5 w-100 text-center">
+                <h1>إبتكار</h1>
+                <p class="text my-3">بوابتك نحو المستقبل التقني</p>
+                <div class="buttons d-flex flex-column flex-md-row align-items-center justify-content-center gap-1">
+                    <a class="btn btn-primary" href="#contact">تواصل معنا</a>
+                    <a class="btn btn-outline-primary" href="#about">من نحن</a>
+                </div>
+            </div>
+            <div class="illustration w-100">
+                <img src="./assets/HeroIllustration.svg" alt="illustration">
+            </div>
+        </div>
+    </section>
+    <section class="about py-5" id="about">
+        <div class="container my-5 text-center d-md-flex justify-content-between align-items-center">
+            <div class="illustration w-100">
+                <img src="./assets/AboutIllustration.svg" alt="logo">
+            </div>
+            <div class="w-100 my-5">
+                <h2>ما هي إبتكار؟</h2>
+                <p class="text my-3">
+                    مرحبًا في إبتكار، حيث نجمع بين الإبداع والتكنولوجيا لتحويل التحديات إلى حلول. فريقنا مكون من رواد الأعمال والمطورين ملتزم بتطوير تطبيقات رائدة وتجارب مستخدم مذهلة. إبتكار، ليست مجرد شركة، بل حركة تقودنا إلى مستقبل بلا حدود. انضموا إلينا في هذه الرحلة الملهمة لإعادة تعريف عالم التكنولوجيا.
+                </p>
+                <a href="#contact" class="btn btn-primary w-50 py-2">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+    <section class="features py-5" id="features">
+        <div class="container text-center my-5">
+            <h2>مميزاتنا</h2>
+            <div class="my-5 cards-grid d-flex flex-wrap justify-content-center gap-3 justify-content-lg-between">
+                <div class="feature-card">
+                    <div class="illustration">
+                        <img src="./assets/Feature1.svg" alt="illustration">
+                    </div>
+                    <h3>حلول مبتكرة</h3>
+                    <p>استكشف حلولًا رائدة ومبتكرة تعيد تشكيل المشهد التكنولوجي بأفكار ونهج إبداعي يمنحك نظرة فريدة نحو المستقبل.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="illustration">
+                        <img src="./assets/Feature2.svg" alt="illustration">
+                    </div>
+                    <h3>تكنولوجيا متقدمة</h3>
+                    <p>اغمر نفسك في عالم التكنولوجيا المتقدمة، حيث الأدوات الحديثة تمهد الطريق لمستقبل متصل وفعّال.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="illustration">
+                        <img src="./assets/Feature3.svg" alt="illustration">
+                    </div>
+                    <h3>اتصال عالمي</h3>
+                    <p>اختبر توسيع الاتصال العالمي من خلال منتجاتنا، تعزيز التعاون والتواصل عبر الحدود لعالم أكثر ارتباطًا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials py-5" id="testimonials">
+        <div class="container my-5">
+            <h2 class="text-center pb-5">التوصيات</h2>
+            <div class="testimonial d-md-flex py-2 gap-5 align-items-center">
+                <div class="profile-pic"><img src="./assets/ProfileFemale.svg" alt="profile-pic"></div>
+                <div class="text w-100">
+                    <i class="fa-solid fa-quote-right fs-1"></i>
+                    <p class="fs-4 fw-bold">لا يمكنني إلا أن أعبر عن إعجابي وامتناني لشركة إبتكار. كانت شريكًا حيويًا في رحلة نجاحنا، حيث قدموا حلاً تكنولوجيًا فريدًا ومبتكرًا. فريقهم ذو الكفاءة العالية لم يقدم فقط حلاً جاهزًا ولكنه أيضًا استمع بعمق إلى احتياجاتنا وعاد بحلاً مخصصًا يلبي تمامًا تطلعاتنا. أنصح بشدة بإبتكار لكل من يبحث عن جودة وابتكار في عالم التكنولوجيا.</p>
+                    <p class="fw-bold fs-5">فاطمة المنصوري</p>
+                    <p class="fs-5 text">الرئيس التنفيذي، حلول المستقبل التكنولوجية</p>
+                </div>
+            </div>
+            <div class="testimonial d-md-flex py-2 gap-5 align-items-center">
+                <div class="profile-pic"><img src="./assets/ProfileMale.svg" alt="profile-pic"></div>
+                <div class="text w-100">
+                    <i class="fa-solid fa-quote-right fs-1"></i>
+                    <p class="fs-4 fw-bold">تعاوننا مع إبتكار كان لا يُضاهى. بينما كانوا يحملون على عاتقهم التحديات التقنية، أظهروا تفهمًا فائقًا لمتطلباتنا وتحدياتنا الفريدة. إن اندماجهم في عملياتنا وتصميم حلول مخصصة جعل العملية سلسة وناجحة. إن فريق إبتكار يمتلك قدرة استثنائية على تحويل التحديات إلى فرص، وهو ما يميزهم عن غيرهم في هذا المجال.</p>
+                    <p class="fw-bold fs-5"> أحمد حسن</p>
+                    <p class="fs-5 text">رئيس قسم تكنولوجيا المعلومات، مجموعة الابتكارات العالمية</p>
+                </div>
+            </div>
+            <div class="testimonial d-md-flex py-2 gap-5 align-items-center">
+                <div class="profile-pic"><img src="./assets/ProfileFemale.svg" alt="profile-pic"></div>
+                <div class="text w-100">
+                    <i class="fa-solid fa-quote-right fs-1"></i>
+                    <p class="fs-4 fw-bold">شركة إبتكار لم تكن مجرد مزودًا لحلول تكنولوجية، بل كانت شريكًا حقيقيًا في نجاحنا. بفضل حلولهم المستدامة، تمكنا من تحقيق تواصل عالمي فعّال وآمن. يظهر فريق إبتكار فهمًا عميقًا للاحتياجات العصرية ويقدم حلاً شاملاً يفوق التوقعات. نحن فخورون بالشراكة معهم ونتطلع إلى المزيد من الابتكار في المستقبل.</p>
+                    <p class="fw-bold fs-5">ليلى خالد</p>
+                    <p class="fs-5 text">مديرة، كونيكت إكس الدولية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact py-5" id="contact">
+        <h2 class="text-center">تواصل معنا</h2>
+        <div class="my-5 container d-md-flex justify-content-between gap-5 align-items-center">
+            <div class="form w-100 my-5">
+                <form class="d-flex flex-column align-items-start">
+                    <label class="w-50 fs-4 my-2" for="email">البريد الإلكتروني</label>
+                    <input class="w-50 rounded border-0 p-2" type="email" name="email" id="email" required>
+                    <label class="w-50 fs-4 my-2" for="fullname">الإسم الكامل</label>
+                    <input class="w-50 rounded border-0 p-2" type="text" name="fullname" id="fullname" required>
+                    <label class="w-50 fs-4 my-2" for="message">الرسالة</label>
+                    <textarea class="w-100 rounded border-0 p-2" name="message" id="message" rows="10" required></textarea>
+                    <button class="btn btn-outline-primary my-2 fs-4">إرسال</button>
+                </form>
+            </div>
+            <div class="illustration w-100">
+                <img src="./assets/Contact.svg" alt="illustration">
+            </div>
+        </div>
+    </section>
+    <footer class="pt-5 pb-2">
+        <div class="container my-5 d-md-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center justify-content-center mb-5">
+                <img src="./assets/Logo.svg" alt="logo">
+            </div>
+            <nav class="text-center my-3">
+                <h3 class="text-white">إبتكار</h3>
+                <ul class="p-0 my-3">
+                    <li><a href="#about">عنا</a></li>
+                    <li><a href="#features">مميزاتنا</a></li>
+                    <li><a href="#testimonials">التوصيات</a></li>
+                    <li><a href="#contact">تواصل</a></li>
+                </ul>
+            </nav>
+            <div dir="ltr" class="contact-info">
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                    <i class="fa-solid fa-envelope fs-4"></i>
+                    <p class="m-0">ibtikar@mail.com</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                    <i class="fa-solid fa-phone fs-4"></i>
+                    <p class="m-0">+249 12 345 6789</p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright m-0 text-center fs-6 opacity-50">جميع الحقوق محفوظة 2023 &copy; إبتكار</p>
+    </footer>
+    <script src="./libs/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/fontawesome/js/all.min.js"></script>
+</body>
+</html>
